@@ -12,20 +12,30 @@
     <div class="contenedor">
         <h1>Todos los Partidos</h1>
         
-        <!-- Widget de Live Score ÚNICO -->
-        <div id='oddspedia-widget-live'>
+        <!-- Widget de Live Score (Código exacto de la documentación) -->
+        <div id='oddspedia-widget'>
             <script>
-            window.oddspediaWidget = {
-                api_token: "f5599489b53b5be3a40b57f48d007ed669c60b76e2bf6f65865e837d585b",
-                domain: "navc-99.github.io",
-                type: "live-score",
-                sports: "football,tennis,basketball",
-                language: "es"
-            };
+            window.oddspediaWidget =
+                {
+                   api_token: "f5599489b53b5be3a40b57f48d007ed669c60b76e2bf6f65865e837d585b",
+                   domain: "navc-99.github.io",
+                   type: "live-score",
+                   width: "0",
+                   theme: "0",
+                   odds_type: "1",
+                   language: "es",
+                   primary_color: "#283E5B",
+                   accent_color: "#00B1FF",
+                   font: "Roboto",
+                   logos: "true",
+                   limit: "50",
+                   popular: "true",
+                   sports: "football,tennis,basketball",
+                };
             </script>
             <script src="https://widgets.oddspedia.com/js/widget/init.js" async></script>
         </div>
-
+        
     </div>
 </body>
 </html>
