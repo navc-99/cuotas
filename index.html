@@ -2,42 +2,30 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mis Cuotas Deportivas</title>
+    <title>Mis Cuotas Deportivas - Partidos</title>
     <style>
         body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f9; }
-        .contenedor { max-width: 800px; margin: auto; }
+        .contenedor { max-width: 1000px; margin: auto; }
     </style>
 </head>
 <body>
     <div class="contenedor">
-        <h1>Cuotas del Partido</h1>
-        <!-- Widget oficial de Oddspedia -->
-        <div id='oddspedia-widget-9432839'>
+        <h1>Todos los Partidos</h1>
+        
+        <!-- Widget de Live Score ÚNICO -->
+        <div id='oddspedia-widget-live'>
             <script>
             window.oddspediaWidget = {
                 api_token: "f5599489b53b5be3a40b57f48d007ed669c60b76e2bf6f65865e837d585b",
-                domain: "navc-99.github.io", /* IMPORTANTE: Cambiaremos esto en el siguiente paso */
-                type: "match-center",
-                match_id: "9432839", /* Partido del Barcelona que encontramos */
-                selector: "oddspedia-widget-9432839",
-                language: "es",
-                odds: "true",
-                odds_type: "1"
+                domain: "navc-99.github.io",
+                type: "live-score",
+                sports: "football,tennis,basketball",
+                language: "es"
             };
             </script>
             <script src="https://widgets.oddspedia.com/js/widget/init.js" async></script>
         </div>
-    </div>
-    <div id='oddspedia-widget-live'>
-        <script>
-        window.oddspediaWidget = {
-            api_token: "f5599489b53b5be3a40b57f48d007ed669c60b76e2bf6f65865e837d585b",
-            domain: "navc-99.github.io",
-            type: "live-score",
-            sports: "football,tennis,basketball"
-        };
-        </script>
-        <script src="https://widgets.oddspedia.com/js/widget/init.js" async></script>
+
     </div>
 </body>
 </html>
